@@ -343,7 +343,7 @@ form .btn2{
 }
 .column {
     float: left;
-    width: 25%;
+    width: 20%;
     padding: 5px;
     overflow: hidden;
   }
@@ -354,7 +354,7 @@ form .btn2{
     border: 1px solid #ff004f; /* Gray border */
     border-radius: 4px;  /* Rounded border */
     padding: 5px; /* Some padding */
-    width: 250px; /* Set a small width */
+    width: 150px; /* Set a small width */
   }
   column p{
     display: none;
@@ -413,6 +413,9 @@ form .btn2{
     color: white;
     font-size: 35px;
     cursor: pointer;
+  }
+  .workheading{
+    padding:1rem;
   }
 /* The grid: Four equal columns that floats next to each other */
 ------------css for small screen---------*/
@@ -498,6 +501,13 @@ form .btn2{
     .btn{
         flex: auto;
     }
-
+    .column img {
+        opacity: 0.8;
+        cursor: pointer;
+        border: 1px solid #ff004f; /* Gray border */
+        border-radius: 4px;  /* Rounded border */
+        padding: 5px; /* Some padding */
+        width: 100px; /* Set a small width */
+      }
 
 }

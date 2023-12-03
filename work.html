@@ -15,29 +15,32 @@
                 <img src="images/logo.png" class="logo">
                 <ul id="sidemenu">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#data-visualization">Data Visualization</a></li>
-                    <li><a href="#machine-learning">Machine Learning</a></li>
-                    <li><a href="#art-design">Art/Design</a></li>
+                    <li><a href="#Data-Viz">Data Visualization</a></li>
+                    <li><a href="#Data">Machine Learning</a></li>
+                    <li><a href="#Art">Art/Design</a></li>
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
     </div class="work-grid">
         <!-- The grid: four columns -->
-<div class="pics-grid">   
+<div class="pics-grid" id="Data-Viz">
+
+   
         <div class="row2">
+            <h1 class="workheading">Data Visualization</h1>
             <div class="column">
-                <img src="images/img1tooltip.png" alt="Tooltip Viz" onclick="myFunction(this,'tooltip')";>
+                <img src="images/img1tooltip.png" alt="Tooltip Viz" onclick="myFunction1(this,'tooltip')";>
                 
             </div>
             <div class="column">
-                <img src="images/img2volchart.png" alt="Volume Chart" onclick="myFunction(this,'volchart')";>
+                <img src="images/img2volchart.png" alt="Volume Chart" onclick="myFunction1(this,'volchart')";>
             </div>
             <div class="column">
-                <img src="images/img3segmentdash.png" alt="Customer Segmentation Dashboard" onclick="myFunction(this,'segment')";>
+                <img src="images/img3segmentdash.png" alt="Customer Segmentation Dashboard" onclick="myFunction1(this,'segment')";>
             </div>
             <div class="column">
-                <img src="images/img4salesdash.png" alt="Sales Dashboard" onclick="myFunction(this,'salesdash')";>
+                <img src="images/img4salesdash.png" alt="Sales Dashboard" onclick="myFunction1(this,'salesdash')";>
             </div>
         </div>
   
@@ -47,7 +50,7 @@
     <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   
     <!-- Expanded image -->
-     <img id="expandedImg" style="width:50%; padding: 10px;">
+     <img id="expandedImg1" style="width:50%; padding: 10px;">
   
     <!-- Image text -->
     <div id="imgtext">
@@ -66,93 +69,187 @@
     </div>
   </div>
 
-</div>
 
-<div class="Machine Learning/Nueral Networks-grid">   
+
+<div class="Machine Learning/Nueral Networks-grid" id="Data">   
     <div class="row2">
+        <h1 class="workheading">Data Science</h1>
         <div class="column">
-            <img src="images/img5mathgarden.png" alt="Math Garden" onclick="myFunction(this,'mathgarden')";>
+            <img src="images/img5mathgarden.png" alt="Math Garden" onclick="myFunction2(this,'mathgarden')";>
             
         </div>
         <div class="column">
-            <img src="images/img6impressionclassifier.png" alt="Impressionist Classifier" onclick="myFunction(this,'volchart')";>
+            <img src="images/img6impressionclassifier.png" alt="Impressionist Classifier" onclick="myFunction2(this,'impressionist')";>
         </div>
         <div class="column">
-            <img src="images/img3segmentdash.png" alt="Mountains" onclick="myFunction(this,'segment')";>
+            <img src="images/img28hamorspam.png" alt="Ham or Spam" onclick="myFunction2(this,'hamorspam')";>
         </div>
         <div class="column">
-            <img src="images/img4salesdash.png" alt="Lights" onclick="myFunction(this,'salesdash')";>
+            <img src="images/img29tweet.png" alt="Tweet Classifier" onclick="myFunction2(this,'tweet')";>
         </div>
     </div>
-
+</div>
 <!-- The expanding image container -->
 <div class="container-work">
 <!-- Close the image -->
 <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 
 <!-- Expanded image -->
- <img id="expandedImg" style="width:50%; padding: 10px;">
+ <img id="expandedImg2" style="width:50%; padding: 10px;">
 
 <!-- Image text -->
 <div id="imgtext">
     <div class="detail-contents active-detail" id="mathgarden">
         <p>Math Game (Computer Vision)<br> <br> <br>A fun website where the user answers math questions by writing their answer on a canvas.  The computer uses a neural net model trained on hand written digits to tell weither the answer is correct. Try it out at the link below<br> <br><a href="https://chrisstutz.github.io/stutz-math-garden/" class="link"><i class="fa-solid fa-link"></i> Math Garden Site</a></p>
     </div>
-    <div class="detail-contents" id="volchart">
-        <p>Interactive Unemployment Chart<br> w/ filtering and cursor details<br> <br>This visual is allows the user to filter by age and see time lapse data down to the month in the same visual.<br>See the interactive file at:<br> <br><a href="https://public.tableau.com/app/profile/chris.stutz" class="link"><i class="fa-solid fa-link"></i>  Tableau Public Portfolio</a></p>
+    <div class="detail-contents" id="impressionist">
+        <p>Impressionist Classifier<br> <br> <br>This classifier uses a nueral network to train on gathered images and can tell if artwork comes from one of 6 different impressionist artists with 80% accuracy.<br>See the interactive file at:<br> <br><a href="https://www.kaggle.com/code/chrisstutz" class="link"><i class="fa-solid fa-link"></i>  My Kaggle Portfolio</a></p>
     </div>
-    <div class="detail-contents" id="segment">
-        <p>Segmentation Dashboard<br>w/ filtering<br> <br>This dashboard is an interactive visual that allows the business to see the segmentation of their market. It allows the user to see the details of each segment of their customer base to target marketing, or launch new products, etc... It is interactive easy to navigate and quick to read.<br> <br><a href="https://public.tableau.com/app/profile/chris.stutz" class="link"><i class="fa-solid fa-link"></i> Tableau Public Portfolio</a></p>
+    <div class="detail-contents" id="hamorspam">
+        <p>Natural Language Processor<br><br> <br>This model trained on over a 2000 emails is able to parse weither an email is spam or not spam with 90% accuracy.<br> <br><a href="https://www.kaggle.com/code/chrisstutz" class="link"><i class="fa-solid fa-link"></i> My Kaggle Portfolio</a></p>
     </div>
-    <div class="detail-contents" id="salesdash">
-        <p>Sales Dashboard<br>w/ filtering, interactive tooltip and segmentation<br> <br>This dashboard is an interactive visual that allows the business to quickly assess which areas of the business are consistently meeting sales targets. It is easy to navigate and visually easy to read with minimal context<br> <br><a href="https://public.tableau.com/app/profile/chris.stutz" class="link"><i class="fa-solid fa-link"></i> Tableau Public Portfolio</a></p>
+    <div class="detail-contents" id="tweet">
+        <p>Sentiment Analysis<br>w/ natural language processing<br> <br>This model predicts wiether a tweet is actually about a disaster that happend or just hyperbole and extreme sentiment with 83% accuracy. It placed high on the leaderboard in competition. It uses the hugging face transformers library for NLP.<br> <br><a href="https://www.kaggle.com/code/chrisstutz" class="link"><i class="fa-solid fa-link"></i> My Kaggle Portfolio</a></p>
     </div>
 </div>
 </div>
 
-</div>
-<div class="Art-grid">   
+
+<div class="Art-grid" id="Art">   
     <div class="row2">
+        <h1 class="workheading">Art/Illustration</h1>
+
         <div class="column">
-            <img src="images/img10brochure.png" alt="Dog Brochure" onclick="myFunction(this,'dog-brochure')";>
+            <img src="images/img11beachballillustration.png" alt="Children's Book Illustration" onclick="myFunction3(this,'beachball')";>
+        </div>
+        <div class="column">
+            <img src="images/img12dogandcatset.png" alt="Dog and Cat Illustrations" onclick="myFunction3(this,'dogandcat')";>
+        </div>
+        <div class="column">
+            <img src="images/img15loyolabridgepainting.png" alt="Loyola Bridge Oil Painting" onclick="myFunction3(this,'loyola')";>
+        </div>
+        <div class="column">
+            <img src="images/img16starwarspoohbear.png" alt="Star Wars parody illustration" onclick="myFunction3(this,'poohbear')";>
             
         </div>
         <div class="column">
-            <img src="images/img11beachballillustration.png" alt="Children's Book Illustration" onclick="myFunction(this,'beachball')";>
+            <img src="images/img17cityscapepainting.png" alt="Baltimore harbor cityscape" onclick="myFunction3(this,'cityscape');">
         </div>
         <div class="column">
-            <img src="images/img14nightskylogo.png" alt="Night Sky graphic" onclick="myFunction(this,'NightSky')";>
+            <img src="images/img19happypainting.png" alt="Emotion happy painting" onclick="myFunction3(this,'happy')";>
         </div>
         <div class="column">
-            <img src="images/img13bulldogpainting.png" alt="Bull Dog Illustration" onclick="myFunction(this,'BullDog')";>
+            <img src="images/img20angrypainting.png" alt="Emotion Angry painting" onclick="myFunction3(this,'angry')";>
         </div>
         <div class="column">
-            <img src="images/img23dogbrochure.png" alt="Dog Pamphlet" onclick="myFunction(this,'dog-pamphlet')";>
+            <img src="images/img21lighthousepainting.png" alt="Lighthouse painting" onclick="myFunction3(this,'lighthouse')";>
             
         </div>
         <div class="column">
-            <img src="images/img12dogandcatset.png" alt="Children's Book Illustration" onclick="myFunction(this,'DogandCat');">
+            <img src="images/img25treepainting.png" alt="Tree Painting" onclick="myFunction3(this,'tree');">
         </div>
         <div class="column">
-            <img src="images/img15loyolabridgepainting.png" alt="Commision Painting: Loyola College" onclick="myFunction(this,'LoyolaBridge')";>
+            <img src="images/img26cryingdrawing.png" alt="Charcoal drawing" onclick="myFunction3(this,'crying')";>
         </div>
         <div class="column">
-            <img src="images/img24websitelogo.png" alt="My Caring Paws Logo" onclick="myFunction(this,'Web-logo')";>
+            <img src="images/img22cockerpainting.png" alt="Cocker Spaniel Painting" onclick="myFunction3(this,'cocker')";>
+            
         </div>
     </div>
+    </div>
+    <div class="container-work">
+        <!-- Close the image -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        
+        <!-- Expanded image -->
+         <img id="expandedImg3" style="width:50%; padding: 10px;">
+        
+        <!-- Image text -->
+        <div id="imgtext">
+            <div class="detail-contents active-detail" id="beachball">
+                <p>Beachballs Journey Illustration<br> <br>Watercolor and Pen and ink <br>A illustration I created for a published children's book entitled A Beach Ball's Journey.<br> </p>
+            </div>
+            <div class="detail-contents" id="dogandcat">
+                <p>Dog & Cat friends book illustration<br> Watercolor and pen & ink<br> <br>A illustration I created for a published children's book entitled The Wisdom of Animals. <br></p>
+            </div>
+            <div class="detail-contents" id="loyola">
+                <p>Commisioned Painting<br>Loyola Bridge in Baltimore, MD<br> <br>A commissioned oil painting from a client who went to Loyola College. The paining is 24 x 24 and features a colorful impressionist style.</p>
+            </div>
+            <div class="detail-contents" id="poohbear">
+                <p>Star Wars as Winnie Pooh charachters <br>Colored pencil on paper<br> <br>A parody illustration that changes Winnie the Pooh and friends into star wars charchters. It includes Piglet as Chewy and a AT-AT as Eeyore.</p>
+            </div>
+            <div class="detail-contents active-detail" id="cityscape">
+                <p>Commisioned Painting<br> <br>Baltimore City Harbor (Oil on Canvas)<br>This painting was commisioned for a client who wanted thier favorite view on the wall to see everyday.<br> </p>
+            </div>
+            <div class="detail-contents" id="happy">
+                <p>Emotions Painting Series<br> Happy (Oil on Canvas)<br> <br>This painting is part of my own series of paintings that center on showing extreme emotions.<br></p>
+            </div>
+            <div class="detail-contents" id="angry">
+                <p>Emotions Painting Series<br>Angry (Oil on Canvas)<br> <br>This painting is part of my own series of paintings that center on showing extreme emotions.</p>
+            </div>
+            <div class="detail-contents" id="lighthouse">
+                <p>Lighthouse Painting <br>Acrylic on Canvas Board<br> <br>I am a certified painting instructor for Grumbacher Art Supplies. This painting was created and used in teaching a 4 hour advanced acrylic painting workshop</p>
+            </div>
+            <div class="detail-contents active-detail" id="tree">
+                <p>Lone Elm Painting<br> <br>Oil on Canvas<br>A painting created specifically to fit the decor and colors of a particular home. The painting is very large at 30x60.<br> </p>
+            </div>
+            <div class="detail-contents" id="crying">
+                <p>Emotion Drawing<br> Charcoal on Paper<br> <br>A drawing created to evoke extreme emotion in the viewer. <br></p>
+            </div>
+            <div class="detail-contents" id="cocker">
+                <p>Commisioned Painting<br>Cocker Spaniel Rescue logo (Oil on Canvas)<br> <br>A commissioned oil painting used for marketing and merchandise for the Cocker Spaniel rescue of Maryland. I created t-shirt designs,color prints and logos from the painting.</p>
+            </div>
+
+        </div>
+        </div>
+<div class="Design-grid">   
+    <div class="row2">
+        <h1 class="workheading">Graphic Design</h1>
     <div class="column">
-        <img src="images/img16starwarspoohbear.png" alt="Star Wars Pooh Bear Illustration" onclick="myFunction(this,'Star-Wars-Illustration')";>
+        <img src="images/img24websitelogo.png" alt="Star Wars Pooh Bear Illustration" onclick="myFunction4(this,'weblogo')";>
         
     </div>
     <div class="column">
-        <img src="images/img19happypainting.png" alt="Emotion Painting Happy" onclick="myFunction(this,'Happy-Painting')";>
+        <img src="images/img10brochure.png" alt="Emotion Painting Happy" onclick="myFunction4(this,'dogbrochure')";>
     </div>
     <div class="column">
-        <img src="images/img17cityscapepainting.png" alt="CityScape" onclick="myFunction(this,'CityScape')";>
+        <img src="images/img14nightskylogo.png" alt="CityScape" onclick="myFunction4(this,'nightsky')";>
     </div>
     <div class="column">
-        <img src="images/img20angrypainting.png" alt="Angry Woman Painting" onclick="myFunction(this,'Angry-Painting')";>
+        <img src="images/img23dogbrochure.png" alt="Angry Woman Painting" onclick="myFunction4(this,'brochure')";>
     </div>
+    <div class="column">
+        <img src="images/img27logowomenshealth.png" alt="Angry Woman Painting" onclick="myFunction4(this,'womenlogo')";>
+    </div>
+    </div>
+</div>
+<div class="container-work">
+    <!-- Close the image -->
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    
+    <!-- Expanded image -->
+     <img id="expandedImg4" style="width:50%; padding: 10px;">
+    
+    <!-- Image text -->
+    <div id="imgtext">
+        <div class="detail-contents active-detail" id="weblogo">
+            <p>My Caring Paws Logo and Web Design<br>Full site and brand design for non-profit <br> <br>I designed logo, wrote javascript,html,css for all elements,forms and interactive/responsive features. Check it out at the link below<br> <br><a href="https://www.jacobsonns.com/" class="link"><i class="fa-solid fa-link"></i> My Caring Paws Site</a></p>
+        </div>
+        <div class="detail-contents" id="dogbrochure">
+            <p>Great Dane Rescue (Parade of Paws Event Mailer)<br>Custom illustration & Design work<br> <br>This mailed brochure is for the local Great Dane rescue for an event they held to raise donations. It includes a custom illustration and design work for the flyer. <br></p>
+        </div>
+        <div class="detail-contents" id="nightsky">
+            <p>Night Sky website backdrop<br>backdrop created for clinic website backdrop<br> <br>This is a digital illustration created for an interactive website for a clinic in Maryland. The stars were coded to later as links to various parts of the site.</p>
+        </div>
+        <div class="detail-contents" id="brochure">
+            <p>Therapy Dog Training Brochure<br> Design work for non-profit<br> <br>This brochure was created for K-pets a local therapy dog non-profit. It gives information on how access training for the dogs.</p>
+        </div>
+        <div class="detail-contents" id="womenlogo">
+            <p>Womens Health Organization Logo Designs<br> Design work for local clinic<br> <br>These logos were created from scratch after presenting the stake holders with numerous options. These are two finalists that were chosen for their branding.</a></p>
+        </div>
+    </div>
+    </div>
+</div>
 
 <!-- The expanding image container -->
 <div class="container-work">
@@ -182,9 +279,9 @@
 </div>
 
 <script>
-function myFunction(imgs,detailname) {
+function myFunction1(imgs,detailname) {
     // Get the expanded image
-    var expandImg = document.getElementById("expandedImg");
+    var expandImg = document.getElementById("expandedImg1");
     var details = document.getElementsByClassName("detail-contents")
     // Use the same src in the expanded image as the image being clicked on from the grid
     expandImg.src = imgs.src;
@@ -196,6 +293,49 @@ function myFunction(imgs,detailname) {
         
     document.getElementById(detailname).classList.add('active-detail');
   }
+  function myFunction2(imgs,detailname) {
+    // Get the expanded image
+    var expandImg = document.getElementById("expandedImg2");
+    var details = document.getElementsByClassName("detail-contents")
+    // Use the same src in the expanded image as the image being clicked on from the grid
+    expandImg.src = imgs.src;
+    // Show the container element (hidden with CSS)
+    expandImg.parentElement.style.display = "block";
+    for(detail of details){
+            detail.classList.remove('active-detail');
+        }        
+        
+    document.getElementById(detailname).classList.add('active-detail');
+  }
+  function myFunction3(imgs,detailname) {
+    // Get the expanded image
+    var expandImg = document.getElementById("expandedImg3");
+    var details = document.getElementsByClassName("detail-contents")
+    // Use the same src in the expanded image as the image being clicked on from the grid
+    expandImg.src = imgs.src;
+    // Show the container element (hidden with CSS)
+    expandImg.parentElement.style.display = "block";
+    for(detail of details){
+            detail.classList.remove('active-detail');
+        }        
+        
+    document.getElementById(detailname).classList.add('active-detail');
+  }
+  function myFunction4(imgs,detailname) {
+    // Get the expanded image
+    var expandImg = document.getElementById("expandedImg4");
+    var details = document.getElementsByClassName("detail-contents")
+    // Use the same src in the expanded image as the image being clicked on from the grid
+    expandImg.src = imgs.src;
+    // Show the container element (hidden with CSS)
+    expandImg.parentElement.style.display = "block";
+    for(detail of details){
+            detail.classList.remove('active-detail');
+        }        
+        
+    document.getElementById(detailname).classList.add('active-detail');
+  }
+  
 </script>
 
 
