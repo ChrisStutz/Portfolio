@@ -401,7 +401,7 @@ form .btn2{
     display: none;
 }
 .detail-contents.active-detail{
-    display:flex;
+    display:block;
 }
 
   
