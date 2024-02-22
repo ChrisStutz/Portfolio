@@ -8,15 +8,26 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: #080808;
-    color: #fff
+    background-color:black;   
+    color: #fff;
 }
-
+.header-pic{
+    width:40%;
+    padding:1.5%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-radius: 2rem;
+    border:#ff004f solid .05rem;
+    animation-name: head-ani;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
 
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/background2.png);
+    background-color:black;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right center;
@@ -67,21 +78,53 @@ nav ul li a:hover::after{
     width: 100%;
 }
 .header-text p{
-    margin-top: 15%;
-    font-size: 30px;
+    margin-top: 45%;
+    font-size: 1.75rem;
 
 }
 .header-text h1{
-    font-size: 60px;
-    margin-top: 20px ;
+    font-size: 4rem;
+    margin-top: 90en ;
 }
 .header-text h1 span{
     color: #ff004f;
 
 }
+.divider{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border:#ff004f solid .05rem;
+    border-radius: 2rem;
+    margin: auto;
+    animation-name: head-ani;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    width:75%;
+    padding:.25rem;
+
+}
+@keyframes head-ani {
+    0%   {border-color: red;}
+    25%  {border-color: yellow;}
+    50%  {border-color: blue;}
+    100% {border-color: green;}
+  }
+.header-text{
+    width:40%;
+}
+.row-header{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+    border-radius: 2rem;
+    margin: 2%;
+
+}
 /*--------------about-----------*/
 #about{
-    padding-top: 35vh;
+    padding-top: 2vh;
     padding-bottom: 5vh;
     color: #ababab;
 }
@@ -92,6 +135,17 @@ nav ul li a:hover::after{
     border:#ff004f solid .05rem;
     border-radius: 2rem;
     background-image: linear-gradient(transparent 95%,#ff004f);
+    margin-top: 1.5%;
+    padding:1%;
+}
+.row-about{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border:#ff004f solid .05rem;
+    border-radius: 2rem;
+    background-image: linear-gradient(transparent 95%,#ff004f);
+    margin:1.5%;
 }
 .row-blue{
     display: flex;
@@ -100,6 +154,7 @@ nav ul li a:hover::after{
     border:#0affff solid .05rem;
     border-radius: 2rem;
     background-image: linear-gradient(transparent 95%,#0affff);
+    margin-top: 1.5%;
 }
 .row-green{
     display: flex;
@@ -108,6 +163,7 @@ nav ul li a:hover::after{
     border:#00ff6a solid .05rem;
     border-radius: 2rem;
     background-image: linear-gradient(transparent 95%,#00ff6a);
+    margin-top: 1.5%;
 }
 .row-yellow{
     display: flex;
@@ -116,6 +172,7 @@ nav ul li a:hover::after{
     border:#f9f100 solid .05rem;
     border-radius: 2rem;
     background-image: linear-gradient(transparent 95%,#f9f100);
+    margin-top: 1.5%;
 }
 .row-purple{
     display: flex;
@@ -124,14 +181,16 @@ nav ul li a:hover::after{
     border:#ac12ff solid .05rem;
     border-radius: 2rem;
     background-image: linear-gradient(transparent 95%,#ac12ff);
+    margin-top: 1.5%;
 }
 .about-col-1{
     flex-basis: 35%;
+    padding:2% 1%;
 }
 .about-col-1 img{
     width: 100%;
     border-radius: 15px;
-    margin-left: 30px;
+    margin-left: 30en;
 }
 .about-col-2{
     flex-basis: 55%;
@@ -180,12 +239,19 @@ nav ul li a:hover::after{
 }
 .col1{
     flex-basis: 40%;
+    padding:3%;
 
 }
 .col2{
     flex-basis: 40%;
     padding-left: 20px;
-
+    padding:3%;
+}
+.col3{
+    padding:3%;
+}
+body .neon{
+    background-image: url(C:\Users\stutz\OneDrive\Documents\GitHub\Portfolio\images\neon-colors-lights-5k-black-wallpaper-preview.jpg);
 }
 .tab-contents ul li{
     list-style: none;
@@ -219,6 +285,14 @@ nav ul li a:hover::after{
     border-radius: 10px;
     transition: background 0.5s; transform:0.5s;
 }
+.services-list-green div{
+    background:#262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s; transform:0.5s;
+}
 .services-list div h2{
     margin-bottom: 10px;
     font-size:30px;
@@ -231,8 +305,17 @@ nav ul li a:hover::after{
     margin-top: 20px;
     display: inline-block;
 }
-.services-list div:hover{
+.services-list-red:hover{
     background:#ff004f;
+    transform: translateY(-10px);
+}
+.services-list-green:hover{
+    background:#01dc55;
+    transform: translateY(-10px);
+    border:#00ff6a;
+}
+.services-list-blue:hover{
+    background:#018bdb;
     transform: translateY(-10px);
 }
 /*---------my work----------*/
@@ -274,6 +357,42 @@ nav ul li a:hover::after{
     font-size: 14px;
     transition: .5s;transform: 0.5s;
 }
+.layer-blue{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,.6),#018bdb);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: .5s;transform: 0.5s;
+}
+.layer-purple{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,.6),#ac12ff);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: .5s;transform: 0.5s;
+}
 .layer h3{
     font-weight: 500;
     margin-bottom: 20px;
@@ -290,8 +409,38 @@ nav ul li a:hover::after{
     border-radius: 50%;
     text-align: center;
 }
+.layer-blue a{
+    margin-top: 20px;
+    color: #018bdb;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.layer-purple a{
+    margin-top: 20px;
+    color: #ac12ff;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
 .work:hover img{
     transform:scale(1.1);
+}
+.work:hover .layer-blue{
+    height: 100%;
+}
+.work:hover .layer-purple{
+    height: 100%;
 }
 .work:hover .layer{
     height: 100%;
@@ -310,6 +459,49 @@ nav ul li a:hover::after{
 .btn:hover{
     background: #ff004f;
 }
+.btn-blue{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #018bdb;
+    padding: 18px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color:#fff;
+    transition: 0.5s;transform:0.5s;
+}
+.btn-blue:hover{
+    background: #018bdb;
+}
+.btn-green{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #01dc55;
+    padding: 18px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color:#fff;
+    transition: 0.5s;transform:0.5s;
+}
+.btn-green:hover{
+    background: #01dc55;
+}
+.btn-purple{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ac12ff;
+    padding: 18px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color:#fff;
+    transition: 0.5s;transform:0.5s;
+}
+.btn-purple:hover{
+    background: #ac12ff;
+}
+
 /*------------contact------------*/
 .social-icons{
     color: #fff;
@@ -441,9 +633,23 @@ form .btn2{
     display:flex;
 }
 
-#Data-Viz h1{
-    padding-top:5%;
-    padding-bottom:1%;
+.viz-heading{
+    padding:5% 2% .25% 2%;
+    background-image: linear-gradient(transparent 95%,#0affff);
+    display:inline-block;
+    border-radius: 2rem;
+}
+.data-heading{
+    padding:5% 2% .25% 2%;
+    background-image: linear-gradient(transparent 95%,#f9f100);
+    display:inline-block;
+    border-radius: 2rem;
+}
+.art-heading{
+    padding:5% 2% .25% 2%;
+    background-image: linear-gradient(transparent 95%,#ff004f);
+    display:inline-block;
+    border-radius: 2rem;
 }
 #Data h1{
     padding-top:1%;
@@ -625,7 +831,7 @@ form .btn2{
     margin-top:0;
     padding: 0;
     width: 70%;
-    max-width: 700px;
+    max-width: 500px;
   }
   
   /* The Close Button */
