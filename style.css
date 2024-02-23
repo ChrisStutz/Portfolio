@@ -529,6 +529,10 @@ body .neon{
     padding: 0 30vh;
 
 }
+.form-service{
+    margin: 1rem;
+    justify-content: flex-start;
+}
 .contact-left p{
     margin-top: 20px;
 }
@@ -677,7 +681,6 @@ form .btn2{
     color: #ff004f;
   }
   .service-bullets{
-    background:#262626;
     padding: 40px;
     font-size: 3vh;
     font-weight: 300;

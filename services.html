@@ -24,7 +24,8 @@
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
     <div id="Data-Science">
-        <h1 class="workheading2">Data Science:</h1>
+        <h1 class="viz-heading">Data Science:</h1>
+        <div class="row-blue">
         <ul class="service-bullets">
             <li>Create custom dashboards and automated reports to easily analyze data and find insights</li>
             <li>Data cleaning, transforming, exploration, analysis</li>
@@ -33,9 +34,11 @@
             <li>Manage and query big data with SQL and Python</li>
             <li>Database Management and Creation</li>
         </ul>
+        </div>
     </div>
     <div id="Cloud">
-        <h1 class="workheading2">Cloud:</h1>
+        <h1 class="data-heading">Cloud:</h1>
+        <div class="row-yellow">
         <ul class="service-bullets">
             <li>Cloud Formation (Automate creation of cloud resources and maintenance tasks)</li>
             <li>Creative solutions using interwoven cloud architectures in AWS that are scaleable low latency and efficient</li>
@@ -45,9 +48,11 @@
             <li>Database management using AWS RedShift, RDS, S3, Aurora, DynamoDB</li>
             <li>Create security policies and IAM roles to structure and control access to data</li>
         </ul>
+        </div>
     </div>
     <div id="art">
-        <h1 class="workheading2">Grapic Design, Illustration & Woodworking: </h1>
+        <h1 class="art-heading">Grapic Design, Illustration & Woodworking: </h1>
+        <div class="row">
         <ul class="service-bullets">
             <li>Custom Painting from photo (oils,acrylic or watercolor)</li>
             <li>Custom illustrations for print or web</li>
@@ -63,4 +68,38 @@
             <li>Photo touchups and manipulations</li>
         </ul>
     </div>
+    </div>
+    <h1 class="viz-heading">Services interest form</h1>
+    <div class="form-service"> 
+        <form method="post" name="myemailform" action="form-to-email.php">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="text" name="Email" placeholder="Your Email" required>
+            <input type="text" name="service-type" placeholder="Service type" required>
+            <textarea type="text" name="description" placeholder="Brief Description of the project" required></textarea>
+            <button type="submit" value="Send Form" class="btn-blue btn2">Submit</button>
+        </form>
+    </div>
+    <script>
+
+        var sidemenu = document.getElementById('sidemenu');
+    
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzaBZjA8EUeJk5MAmGlujpZbspWZ9PSPhcyfzKcaHDl8rdYiadWmh3614qn4Bifu72H/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
 </body>
