@@ -74,8 +74,8 @@
         <form method="post" name="myemailform" action="form-to-email.php">
             <input type="text" name="Name" placeholder="Your Name" required>
             <input type="text" name="Email" placeholder="Your Email" required>
-            <input type="text" name="service-type" placeholder="Service type" required>
-            <textarea type="text" name="description" placeholder="Brief Description of the project" required></textarea>
+            <input type="text" name="Service-type" placeholder="Service type" required>
+            <textarea type="text" name="Message" placeholder="Brief Description of the project" required></textarea>
             <button type="submit" value="Send Form" class="btn-blue btn2">Submit</button>
         </form>
     </div>
@@ -90,9 +90,8 @@
             sidemenu.style.right = "-200px";
         }
     </script>
-    
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzaBZjA8EUeJk5MAmGlujpZbspWZ9PSPhcyfzKcaHDl8rdYiadWmh3614qn4Bifu72H/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw4DasZsFzaeKxukXAfsbw2I8h4CE9aZIF-_Jiv3ayeF8RECLfnWqFr3M0YoR05CmtU/exec'
         const form = document.forms['submit-to-google-sheet']
       
         form.addEventListener('submit', e => {
