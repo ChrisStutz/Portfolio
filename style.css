@@ -58,6 +58,9 @@ nav ul li{
     list-style: none;
     margin: 10px 20px;
 }
+nav ul li .fa-solid{
+    display:none;
+}
 nav ul li a{
     color: #fff;
     text-decoration: none;
@@ -156,6 +159,19 @@ nav ul li a:hover::after{
     background-image: linear-gradient(transparent 95%,#0affff);
     margin-top: 1.5%;
 }
+.row-blue-form{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border:#0affff solid .05rem;
+    border-radius: 2rem;
+    background-image: linear-gradient(transparent 95%,#0affff);
+    margin-top: 1.5%;
+    padding-top:1%;
+    width:90%;
+    margin-right:auto;
+    margin-left:auto;
+}
 .row-green{
     display: flex;
     justify-content: space-evenly;
@@ -240,6 +256,7 @@ nav ul li a:hover::after{
 .col1{
     flex-basis: 40%;
     padding:3%;
+    flex-wrap: wrap;
 
 }
 .col2{
@@ -531,7 +548,10 @@ body .neon{
 }
 .form-service{
     margin: 1rem;
-    justify-content: flex-start;
+    width:40%;
+}
+.form-spacing{
+    padding:0 40%;
 }
 .contact-left p{
     margin-top: 20px;
@@ -699,14 +719,14 @@ form .btn2{
 }
 @media only screen and (max-width: 1050px){
     #header{
-        background-image: url(images/phone-background.png);
+        background-color:black;
         height: 76vh;
         background-position: right center;
     }
     .header-text{
         margin-top: 15%;
         margin-bottom: 5%;
-        font-size: 1.5vh;
+        font-size: 3rem;
     }
     .header-text h1{
         font-size: 3vh;
@@ -749,17 +769,63 @@ form .btn2{
     .sub-title{
         font-size: 15vh;
     }
-    .about-col-1,.about-col-2{
-        flex-basis: 85%;
+    .about-col-1{
+        width: 100%;
+    }
+    .about-col-2{
+        width:85%;
+        margin:auto;
+    }
+    .about-col-1 img{
+        width:100%;
     }
     .about-col-1{
-        margin-bottom: 3vh;
-        margin-top: 4vh;
-        padding-top: 3vh;
+        padding:0;
+        margin-top:1vh;
     }
     .about-col-2{
         font-size: 2vh;
         padding: 2vh;
+    }
+    .col1{
+        padding:3%;
+        width:70%;
+    }
+    .col2{
+        padding:3%;
+        flex-wrap: wrap;
+    }
+    .header-pic{
+        width:50%;
+        padding:1%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        border-radius: 2rem;
+        border:#ff004f solid .05rem;
+        animation-name: head-ani;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+    .header-text p{
+        margin-top: 20%;
+        font-size: 1rem;
+        margin-right:10%;
+    
+    }
+    .header-text h1{
+        font-size: 1rem;
+        margin-top: 90en;
+    }
+    .row-purple{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        border:#ac12ff solid .05rem;
+        border-radius: 2rem;
+        background-image: linear-gradient(transparent 95%,#ac12ff);
+        margin-top: 1.5%;
+        padding-bottom: 2%;
     }
     .tab-links{
         font-size: 8vh;
@@ -770,6 +836,45 @@ form .btn2{
     }
     .services-list div{
         margin-bottom: 20px;  
+    }
+    .service-bullets{
+        display:flex;
+        width:85%;
+        flex-wrap: wrap;
+        font-size: 1rem;
+    }
+    .viz-heading{
+        padding:5% 2% .25% 2%;
+        background-image: linear-gradient(transparent 95%,#0affff);
+        display:block;
+        justify-content: center;
+        border-radius: 2rem;
+        margin-bottom:.5rem;
+        align-items: center;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .data-heading{
+        padding:5% 2% .25% 2%;
+        background-image: linear-gradient(transparent 95%,#f9f100);
+        display:block;
+        justify-content: center;
+        border-radius: 2rem;
+        margin-bottom:.5rem;
+        align-items: center;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .art-heading{
+        padding:5% 2% .25% 2%;
+        background-image: linear-gradient(transparent 95%,#ff004f);
+        display:block;
+        border-radius: 2rem;
+        margin-bottom:.5rem;
+        align-items: center;
+        text-align: center;
+        font-size: 1.5rem;
+        justify-content: center;
     }
     .work{
         margin-bottom: 5vh;
@@ -785,9 +890,15 @@ form .btn2{
         opacity: 0.8;
         cursor: pointer;
         border: 1px solid #ff004f; /* Gray border */
-        border-radius: 4px;  /* Rounded border */
-        padding: 5px; /* Some padding */
-        width: 100px; /* Set a small width */
+        border-radius: 3px;  /* Rounded border */
+        padding: 2px; /* Some padding */
+        width: 35px; /* Set a small width */
+      }
+      .column {
+        float: left;
+        width: 20%;
+        padding: 5px;
+        overflow: hidden;
       }
 
 }
