@@ -935,6 +935,7 @@ form .btn2{
     height: 100%;
     overflow: auto;
     background-color: black;
+    background-size: cover;
   }
   
   /* Modal Content */
