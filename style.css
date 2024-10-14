@@ -926,7 +926,7 @@ form .btn2{
   /* The Modal (background) */
   .modal {
     display: none;
-    position: fixed;
+    position: auto;
     z-index: 1;
     padding-top: 100px;
     left: 0;
